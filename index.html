@@ -21,9 +21,42 @@
 <body>
 	<div class="gallery">
 		<img
+			onclick="imgHandleClick(event)"
+			class="lightbox-img"
 			data-target="lightbox-bg"
 			id="img-1"
 			src="img/altitude-clouds-cold-daylight-417173.jpg"
+		/>
+		<img
+			class="lightbox-img"
+			onclick="imgHandleClick(event)"
+			data-target="lightbox-bg"
+			id="img-2"
+			src="img/aerial-view-of-road-in-the-middle-of-trees-1173777.jpg"
+		/>
+
+		<img
+			class="lightbox-img"
+			onclick="imgHandleClick(event)"
+			data-target="lightbox-bg"
+			id="img-2"
+			src="img/man-riding-on-skateboard-2422256.jpg"
+		/>
+
+		<img
+			class="lightbox-img"
+			onclick="imgHandleClick(event)"
+			data-target="lightbox-bg"
+			id="img-2"
+			src="img/seaport-during-daytime-132037.jpg"
+		/>
+
+		<img
+			class="lightbox-img"
+			onclick="imgHandleClick(event)"
+			data-target="lightbox-bg"
+			id="img-2"
+			src="img/top-view-of-asphalt-road-1612461.jpg"
 		/>
 	</div>
 	<p>
@@ -233,12 +266,21 @@
 	<div class="lightbox-bg lightbox-hide" id="lightbox-bg">
 		<div class="lightbox-container" id="lightbox-container">
 			<div class="lightbox-source">
-				<div class="lightbox-btn lightbox-prev-btn">
+				<div
+					id="lightbox-prev-btn"
+					class="lightbox-btn lightbox-prev-btn"
+				>
 					<span><i class="fas fa-arrow-left"></i></span>
 				</div>
 
-				<img src="img/altitude-clouds-cold-daylight-417173.jpg" />
-				<div class="lightbox-btn lightbox-next-btn">
+				<img
+					id="lightbox-img"
+					src="img/altitude-clouds-cold-daylight-417173.jpg"
+				/>
+				<div
+					id="lightbox-next-btn"
+					class="lightbox-btn lightbox-next-btn"
+				>
 					<span><i class="fas fa-arrow-right"></i></span>
 				</div>
 				<div class="lightbox-navbar">
