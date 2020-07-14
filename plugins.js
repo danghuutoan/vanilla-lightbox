@@ -3,7 +3,7 @@ imgHandleClick = (e) => {
 	const albumLength = album.length;
 	let currentIndex = 0;
 	const element = e.target;
-	console.log(typeof element);
+
 	for (let i = 0; i < album.length; i++) {
 		if (element === album[i]) {
 			currentIndex = i;
