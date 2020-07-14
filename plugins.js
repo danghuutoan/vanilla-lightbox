@@ -32,4 +32,15 @@ imgHandleClick = (e) => {
 			lightboxImg.src = album[currentIndex].attributes.src.value;
 		}
 	};
+
+	prevBtn = document.getElementById("lightbox-prev-btn");
+
+	prevBtn.onclick = (e) => {
+		if (currentIndex - 1 < 0) {
+			currentIndex = 0;
+		} else {
+			currentIndex = currentIndex - 1;
+			lightboxImg.src = album[currentIndex].attributes.src.value;
+		}
+	};
 };
